@@ -2,4 +2,4 @@
 
 Syntax theme mimicking Chrome Developer Tools
 
-![screenshot](https://github.com/mapsiter/chrome-syntax/screenshot_chrome-syntax.png?raw=true)
+![screenshot](https://github.com/mapsiter/chrome-syntax/blob/master/screenshot_chrome-syntax.png?raw=true)
