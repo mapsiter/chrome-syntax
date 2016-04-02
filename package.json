@@ -1,0 +1,17 @@
+{
+  "name": "chrome-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Syntax theme mimicking Chrome Developer Tools",
+  "keywords": [
+    "syntax",
+    "theme",
+    "chrome",
+    "devtools"
+  ],
+  "repository": "https://github.com/mapsiter/chrome-syntax.git",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
