@@ -2,4 +2,4 @@
 
 Syntax theme mimicking Chrome Developer Tools
 
-![screenshot](/screenshot_chrome-syntax.png?raw=true)
+![screenshot](../screenshot_chrome-syntax.png?raw=true)
