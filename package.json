@@ -1,7 +1,7 @@
 {
   "name": "chrome-syntax",
   "theme": "syntax",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Syntax theme mimicking Chrome Developer Tools",
   "keywords": [
     "syntax",
