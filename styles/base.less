@@ -51,15 +51,27 @@ atom-text-editor, :host {
   }
 }
 
-atom-text-editor .search-results .marker .region,
-:host .search-results .marker .region {
-  background-color: transparent;
-  border: 1px solid @syntax-result-marker-color;
+atom-text-editor .selection .region,
+:host .selection .region {
+  // fix to show search colour above the selected
+  z-index: -2;
 }
 
-atom-text-editor .search-results .marker.current-result .region,
-:host .search-results .marker.current-result .region {
-  border: 1px solid @syntax-result-marker-color-selected;
+:host .find-result .region,
+atom-text-editor .find-result .region,
+atom-text-editor::shadow .find-result .region {
+  background-color: transparent;
+  border: 1px solid @light-gray;
+  border-radius:0;
+}
+
+:host .find-result .region,
+atom-text-editor .current-result .region,
+atom-text-editor::shadow .current-result .region {
+  background-color: lighten(@chrome-blue, 35%);
+  border: 1px solid @light-gray;
+  // fix to show search colour above the selected
+  z-index: -1;
 }
 
 .comment {
@@ -130,6 +142,25 @@ atom-text-editor .search-results .marker.current-result .region,
 .string {
   color: @chrome-blue;
 
+  &.quoted {
+        &.json, &.coffee {
+          color: @chrome-black;
+
+          & + .keyword.operator.coffee {
+            // make an exception for all .string keys whose immediate parent is .value
+            & + .string.quoted.coffee {
+              color: @chrome-blue;
+            }
+          }
+
+          & + .structure.dictionary.value.json {
+            // make an exception for all .string keys whose immediate parent is .value
+            .string.quoted.json {
+              color: @chrome-blue;
+            }
+          }
+        }
+      }
 
   &.regexp {
     color: @cyan;
