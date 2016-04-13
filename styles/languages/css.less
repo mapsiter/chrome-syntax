@@ -1,0 +1,54 @@
+.source.css {
+  &.less,
+  &.sass,
+  &.scss {
+    .variable {
+      color: @chrome-red;
+    }
+  }
+  .property-name {
+    color: @chrome-red;
+  }
+  .constant {
+    color: @chrome-black;
+    &.numeric {
+      color: @chrome-black;
+    }
+  }
+  .at-rule {
+    color: @chrome-purple;
+    .punctuation.definition.keyword {
+      color: @chrome-purple;
+    }
+    .punctuation.terminator {
+      color: @chrome-black;
+    }
+  }
+  .entity.other.attribute-name {
+    color: @chrome-black;
+  }
+  .punctuation.definition {
+    &.entity {
+      color: @chrome-black;
+    }
+  }
+  .constant {
+    &.other.color,
+    &.other.rgb-value {
+      color: @chrome-black;
+      &.scss {
+        .punctuation.definition {
+          color: @chrome-purple;
+        }
+      }
+    }
+  }
+  &.scss {
+    .punctuation {
+      color: @chrome-purple;
+    }
+    .entity.tag {
+      color: @chrome-purple;
+    }
+  }
+}

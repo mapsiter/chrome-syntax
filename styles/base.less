@@ -1,4 +1,3 @@
-@import "syntax-variables";
 
 atom-text-editor, :host {
   background-color: @syntax-background-color;
@@ -79,10 +78,10 @@ atom-text-editor::shadow .current-result .region {
 }
 
 .keyword {
-  color: @purple;
+  color: @chrome-red;
 
   &.control {
-    color: @very-light-gray;
+    color: @chrome-purple;
   }
 
   &.operator {
@@ -99,18 +98,18 @@ atom-text-editor::shadow .current-result .region {
 }
 
 .storage {
-  color: @purple;
+  color: @syntax-text-color;
 }
 
 .constant {
-  color: @red;
+  color: @chrome-red;
 
   &.character.escape {
     color: @cyan;
   }
 
   &.numeric {
-    color: @red;
+    color: @chrome-red;
   }
 
   &.other.color {
@@ -123,7 +122,7 @@ atom-text-editor::shadow .current-result .region {
 }
 
 .variable {
-  color: @red;
+  color: @syntax-text-color;
 
   &.interpolation {
     color: darken(@red, 10%);
@@ -141,26 +140,6 @@ atom-text-editor::shadow .current-result .region {
 
 .string {
   color: @chrome-blue;
-
-  &.quoted {
-        &.json, &.coffee {
-          color: @chrome-black;
-
-          & + .keyword.operator.coffee {
-            // make an exception for all .string keys whose immediate parent is .value
-            & + .string.quoted.coffee {
-              color: @chrome-blue;
-            }
-          }
-
-          & + .structure.dictionary.value.json {
-            // make an exception for all .string keys whose immediate parent is .value
-            .string.quoted.json {
-              color: @chrome-blue;
-            }
-          }
-        }
-      }
 
   &.regexp {
     color: @cyan;
@@ -214,26 +193,25 @@ atom-text-editor::shadow .current-result .region {
 
 .support {
   &.class {
-    color: @light-orange;
+    color: @syntax-text-color;
   }
 
   &.function  {
-    color: @orange;
+    color: @syntax-text-color;
 
 
     &.any-method {
-      color: @blue;
+      color: @syntax-text-color;
     }
   }
 }
 
 .entity {
   &.name.function {
-    color: @orange;
+    color: @chrome-purple;
   }
   &.name.type {
-    color: @light-orange;
-    text-decoration: underline;
+    color: @chrome-purple;
   }
 
   &.other.inherited-class {
@@ -274,7 +252,7 @@ atom-text-editor::shadow .current-result .region {
   }
 
   &.selector {
-    color: @purple;
+    color: @chrome-black;
   }
 
   &.separator {

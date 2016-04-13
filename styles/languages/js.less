@@ -1,0 +1,38 @@
+.source.js {
+  .meta {
+    &.import,
+    &.export {
+      .keyword.control {
+        color: @syntax-text-color;
+      }
+    }
+    &.method-call {
+      .entity.name.function {
+        color: @syntax-text-color;
+      }
+    }
+  }
+  .variable.default {
+    color: @chrome-red;
+  }
+  .storage {
+    color: @chrome-purple;
+  }
+  .string{
+    color: @chrome-red;
+  }
+  .numeric {
+    color: @chrome-blue;
+  }
+  .string.template {
+    .embedded {
+      &,
+      &.punctuation,
+      .constant,
+      .variable,
+      .keyword.operator {
+        color: @syntax-text-color;
+      }
+    }
+  }
+}
