@@ -1,60 +1,60 @@
-.source.gfm {
-  .punctuation {
+.syntax--source.syntax--gfm {
+  .syntax--punctuation {
     color: @syntax-text-color;
   }
-  .entity {
+  .syntax--entity {
     color: @chrome-red;
   }
-  .hr {
+  .syntax--hr {
     color: @chrome-purple;
   }
-  .list {
+  .syntax--list {
     color: @chrome-purple;
   }
-  // .support{
+  // .syntax--support{
   //   color: @chrome-purple;
   // }
-  .quote {
+  .syntax--quote {
     color: @syntax-text-color;
-    .support {
+    .syntax--support {
       color: @chrome-purple;
     }
   }
-  .table {
-    .border.pipe,
-    .border.header {
+  .syntax--table {
+    .syntax--border.syntax--pipe,
+    .syntax--border.syntax--header {
       color: @chrome-purple;
     }
-    .border.alignment {
+    .syntax--border.syntax--alignment {
       color: @chrome-purple;
     }
   }
-  .markup {
+  .syntax--markup {
   -webkit-font-smoothing: auto;
-    &.heading {
+    &.syntax--heading {
       color: @syntax-text-color;
-      .heading {
+      .syntax--heading {
         color: @chrome-purple;
       }
     }
-    &.link {
+    &.syntax--link {
       color: @chrome-blue;
     }
-    &.bold {
+    &.syntax--bold {
       color: @syntax-text-color;
       font-weight: bold;
     }
-    &.italic {
+    &.syntax--italic {
       color: @syntax-text-color;
       font-style: italic;
     }
-    &.strike {
+    &.syntax--strike {
       text-decoration: line-through;
     }
-    &.raw {
+    &.syntax--raw {
       color: @light-gray;
     }
-    &.code {
+    &.syntax--code {
       color: @light-gray;
     }
   }

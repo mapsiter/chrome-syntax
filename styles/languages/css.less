@@ -1,53 +1,53 @@
-.source.css {
-  &.less,
-  &.sass,
-  &.scss {
-    .variable {
+.syntax--source.syntax--css {
+  &.syntax--less,
+  &.syntax--sass,
+  &.syntax--scss {
+    .syntax--variable {
       color: @chrome-red;
     }
   }
-  .property-name {
+  .syntax--property-name {
     color: @chrome-red;
   }
-  .constant {
+  .syntax--constant {
     color: @chrome-black;
-    &.numeric {
+    &.syntax--numeric {
       color: @chrome-black;
     }
   }
-  .at-rule {
+  .syntax--at-rule {
     color: @chrome-purple;
-    .punctuation.definition.keyword {
+    .syntax--punctuation.syntax--definition.syntax--keyword {
       color: @chrome-purple;
     }
-    .punctuation.terminator {
+    .syntax--punctuation.syntax--terminator {
       color: @chrome-black;
     }
   }
-  .entity.other.attribute-name {
+  .syntax--entity.syntax--other.syntax--attribute-name {
     color: @chrome-black;
   }
-  .punctuation.definition {
-    &.entity {
+  .syntax--punctuation.syntax--definition {
+    &.syntax--entity {
       color: @chrome-black;
     }
   }
-  .constant {
-    &.other.color,
-    &.other.rgb-value {
+  .syntax--constant {
+    &.syntax--other.syntax--color,
+    &.syntax--other.rgb-value {
       color: @chrome-black;
-      &.scss {
-        .punctuation.definition {
+      &.syntax--scss {
+        .syntax--punctuation.syntax--definition {
           color: @chrome-purple;
         }
       }
     }
   }
-  &.scss {
-    .punctuation {
+  &.syntax--scss {
+    .syntax--punctuation {
       color: @chrome-purple;
     }
-    .entity.tag {
+    .syntax--entity.syntax--tag {
       color: @chrome-purple;
     }
   }

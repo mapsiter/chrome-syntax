@@ -1,36 +1,36 @@
-.source.js {
-  .meta {
-    &.import,
-    &.export {
-      .keyword.control {
+.syntax--source.syntax--js {
+  .syntax--meta {
+    &.syntax--import,
+    &.syntax--export {
+      .syntax--keyword.syntax--control {
         color: @syntax-text-color;
       }
     }
-    &.method-call {
-      .entity.name.function {
+    &.syntax--method-call {
+      .syntax--entity.syntax--name.syntax--function {
         color: @syntax-text-color;
       }
     }
   }
-  .variable.default {
+  .syntax--variable.syntax--default {
     color: @chrome-red;
   }
-  .storage {
+  .syntax--storage {
     color: @chrome-purple;
   }
-  .string{
+  .syntax--string{
     color: @chrome-red;
   }
-  .numeric {
+  .syntax--numeric {
     color: @chrome-blue;
   }
-  .string.template {
-    .embedded {
+  .syntax--string.syntax--template {
+    .syntax--embedded {
       &,
-      &.punctuation,
-      .constant,
-      .variable,
-      .keyword.operator {
+      &.syntax--punctuation,
+      .syntax--constant,
+      .syntax--variable,
+      .syntax--keyword.syntax--operator {
         color: @syntax-text-color;
       }
     }

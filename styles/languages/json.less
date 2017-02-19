@@ -1,32 +1,32 @@
-.source.json {
-  .meta.structure.dictionary {
-    .string {
+.syntax--source.syntax--json {
+  .syntax--meta.syntax--structure.syntax--dictionary {
+    .syntax--string {
       color: @syntax-text-color;
     }
-    .punctuation.definition {
+    .syntax--punctuation.syntax--definition {
       color: @light-gray;
-      &.dictionary,
-      &.array {
+      &.syntax--dictionary,
+      &.syntax--array {
         color: @syntax-text-color;
       }
     }
 
-    .dictionary.value {
-      .string {
+    .syntax--dictionary.syntax--value {
+      .syntax--string {
         color: @chrome-blue;
-        .punctuation.definition {
+        .syntax--punctuation.syntax--definition {
           color: @light-gray;
         }
       }
-      .dictionary {
-        .string {
+      .syntax--dictionary {
+        .syntax--string {
           color: @chrome-blue;
-          .punctuation.definition {
+          .syntax--punctuation.syntax--definition {
             color: @syntax-text-color;
           }
         }
-        .dictionary.value {
-          .string {
+        .syntax--dictionary.syntax--value {
+          .syntax--string {
             color: @chrome-red;
           }
         }
